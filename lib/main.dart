@@ -1,3 +1,4 @@
+import 'package:covid19/views/dashboard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:splashscreen/splashscreen.dart';
@@ -40,10 +41,11 @@ class MyApp extends StatelessWidget {
         imageBackground: AssetImage('images/covidNew.png'),
         loadingText: Text(
           'Залишайтеся вдома та брежіть близьких',
-          style: TextStyle(fontFamily: 'MyFont', fontWeight: FontWeight.bold),
+          style: TextStyle(
+              fontFamily: 'MyFont', fontWeight: FontWeight.bold, fontSize: 18),
         ),
         loaderColor: Colors.orange,
-        navigateAfterSeconds: null,
+        navigateAfterSeconds: Dashboard(),
       ),
     );
   }
