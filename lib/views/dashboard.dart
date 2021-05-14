@@ -138,9 +138,10 @@ class _MainImageState extends State<MainImage>
   @override
   void initState() {
     super.initState();
-    _animationController =
-        AnimationController(vsync: this, duration: Duration(milliseconds: 3000))
-          ..addListener(() => setState(() {}));
+    _animationController = AnimationController(
+      vsync: this,
+      duration: Duration(milliseconds: 3000),
+    )..addListener(() => setState(() {}));
     toggleAnimation();
   }
 
